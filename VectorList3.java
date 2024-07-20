@@ -1,0 +1,40 @@
+package Collection;
+import java.util.*;
+
+public class VectorList3 {
+    public static void main(String[] args) {
+        Vector v = new Vector();
+        v.add("Ayyappa");
+        v.add("jai");
+        v.add(1,"yogi");
+
+
+        Vector v2 = new Vector();
+        v2.add("jashu");
+        v2.add("sai");
+        v2.add("nani");
+        System.out.println(v);
+
+        v.addAll(0,v2);
+        //  for(int i=0; i<v2.size(); i++){
+        //     v.add(v2.get(i));
+
+        //   }
+        System.out.println(v.get(0));
+        v.remove(0);  // v.remove("sai"); // v.removeAll(v2);// v.clear();
+
+        System.out.println(v);
+        System.out.println(v.contains("nani"));
+        System.out.println(v.containsAll(v));
+        v.set(1,"SK");// UPDATE
+        System.out.println(v);
+        System.out.println(v.get(1));
+        System.out.println(v.indexOf("sai"));
+        System.out.println(v.lastElement());
+        System.out.println(v.firstElement());
+        // Object [] arr=v.toArray();
+        //  System.out.println(Array.toString(arr));
+    }
+}
+
+
